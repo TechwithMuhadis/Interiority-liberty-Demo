@@ -1,0 +1,877 @@
+.navbar-brand {
+    font-family: 'poppins';
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0;
+}
+
+.navbar-light .navbar-brand {
+    opacity: 0.95;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* Baki content ke upar rakhne ke liye */
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:hover {
+    color: red;
+    border-bottom: 2px solid red;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shaow .15s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.btn-icon {
+    margin: 10px;
+
+}
+
+.icon {
+    font-size: 30px;
+    color: red;
+}
+
+.btn-icon button {
+    border: 1px solid #ec1944;
+    background: #ec1944;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+
+h6 {
+    color: red;
+}
+
+.carousel {
+    position: relative;
+}
+
+/* Dark Overlay */
+.carousel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+
+/* =========================
+   TEXT ON IMAGE
+========================= */
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carousel-content h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin: 0 0 30px 0;
+}
+
+
+/* View Our Projects */
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    color: #ff1744;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.arrow-circle {
+    width: 28px;
+    height: 28px;
+    margin-left: 8px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    color: #333;
+    border-radius: 50%;
+}
+
+.arrow-circle i {
+    font-size: 12px;
+}
+
+
+/* =========================
+   PREVIOUS / NEXT
+========================= */
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+
+    top: auto;
+    bottom: 30px;
+
+    width: 45px;
+    height: 45px;
+
+    opacity: 1;
+    z-index: 10;
+}
+
+
+/* Previous button */
+.carousel-control-prev {
+    left: 11%;
+}
+
+
+/* Next button */
+.carousel-control-next {
+    left: 15.5%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+/* =========================
+   DOTS
+========================= */
+
+.custom-indicators {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 10px;
+}
+
+.custom-indicators button {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 1;
+}
+
+.custom-indicators button.active {
+    background: #ff1744;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+    width: 45px;
+    height: 45px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.carousel-control-prev {
+    left: 11%;
+}
+
+.carousel-control-next {
+    left: 15%;
+}
+
+.span {
+    color: red;
+    text-align: center;
+    margin: 90px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #f5f2f3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+
+    font-size: 50px;
+    color: red;
+}
+
+.card-icon {
+    font-size: 40px;
+    transition: 0.3s ease;
+}
+
+.card-icon:hover {
+    color: whitesmoke;
+    transform: scale(1.);
+    background-color: red;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link span {
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 5px;
+}
+
+.card-link span {
+    background: red;
+    color: white;
+}
+
+.section-offer {
+    padding: 80px 0;
+    background: rgb(248, 240, 225);
+}
+
+.offer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    padding: auto;
+    font-size: 20px;
+}
+
+.offer-text {
+    width: 50%;
+}
+
+.offer-text h6 {
+    color: red;
+    margin-bottom: 25px;
+}
+
+.offer-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.offer-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.section-how {
+    padding-bottom: 50px;
+}
+
+/* RIGHT SIDE */
+
+.img-01 {
+    width: 50%;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+/* BIG IMAGE */
+
+.big-img {
+    width: 55%;
+}
+
+.big-img img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.small-imgs {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.small-imgs img {
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card-link {
+    color: black;
+}
+
+.card img {
+    transition: 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
+}
+
+.card-link {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.card-link:hover {
+    color: red;
+}
+
+.heading-3 {
+    text-align: center;
+    padding: 100px;
+}
+
+.gallery {
+    background-color: rgb(248, 240, 225);
+}
+
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    /* Images ko proportional rakhne ke liye */
+    transition: transform 0.3s ease;
+}
+
+/* Hover overlay effect */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(181, 53, 91, 0.7);
+    /* Custom color overlay */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .overlay {
+    opacity: 1;
+}
+
+.gallery-card:hover img {
+    transform: scale(1.0);
+}
+
+/* Layout & Container Setup */
+.heading-4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Heading Colors & Typography */
+.heading-4 h6 {
+    color: #e63946;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Styling */
+.sub-heading {
+    color: #e63946;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.stat-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #fde8e8;
+    color: #e63946;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.cot {
+    color: #e63946;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.custom-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Fixed Background & Dark Overlay */
+.testimonial-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+        url('./banner1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    /* Fixed background effect */
+    min-height: 100vh;
+    padding: 60px 0;
+    color: #fff;
+}
+
+/* Fixed Background & Overlay */
+.testimonial-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+        url('./banner1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 60px 0;
+    color: #fff;
+}
+
+/* Fixed Background Overlay Section */
+.testimonial-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)),
+        url('./banner1.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    padding: 80px 0;
+    color: #fff;
+}
+
+/* Mobile support for fixed background */
+@supports (-webkit-touch-callout: none) {
+    .testimonial-section {
+        background-attachment: scroll;
+    }
+}
+
+/* Sub Heading */
+.sub-heading {
+    color: #e63946;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+/* Heading Size */
+.testimonial-heading {
+    font-size: calc(1.5rem + 1.2vw);
+    line-height: 1.2;
+}
+
+/* Client Image Fix (Pehle width 5px thi isliye ghayab thi) */
+.client-img {
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* Client Name */
+.client-name {
+    color: #e63946;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Carousel Dots (Indicators) Styling */
+.custom-carousel .carousel-indicators {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: relative;
+    margin-top: 30px;
+}
+
+.custom-carousel .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.6;
+    border: none;
+    margin-right: 8px;
+    transition: all 0.3s ease;
+}
+
+.custom-carousel .carousel-indicators .active {
+    background-color: #e63946;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card Main Styling & Lift Effect */
+.blog-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+}
+
+.blog-card:hover {
+    transform: translateY(-8px);
+    /* Mouse hone par card upar uthega */
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container & Zoom Effect */
+.img-container {
+    overflow: hidden;
+    height: 230px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.blog-card:hover .img-container img {
+    transform: scale(1.08);
+    /* Hover par image zoom hogi */
+}
+
+/* Category Badge (Space ke hisab se background) */
+.badge-category {
+    background-color: #e63946;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Meta Info (Admin & Date) */
+.meta-info {
+    font-size: 0.85rem;
+    color: #6c757d;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.meta-info i {
+    color: #e63946;
+    margin-right: 4px;
+}
+
+/* Title Link Hover */
+.card-title-link {
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.card-title-link:hover {
+    color: #e63946;
+    /* Title ka color red hoga hover par */
+}
+
+.card-summary {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-top: 8px;
+    margin-bottom: 18px;
+}
+
+/* Read More Link Hover & Arrow Shift */
+.read-more-link {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.3s ease;
+}
+
+.read-more-link:hover {
+    color: #d62828;
+    gap: 12px;
+    /* Arrow thoda aage move hoga */
+}
+
+.heading-5 {
+    text-align: center;
+}
+
+.heading-5 h1 {
+    font-size: 30px;
+}
+
+
+/* --- Basic Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* --- Main Footer Styles --- */
+.main-footer {
+    background-color: #000;
+    color: #a0a0a0;
+    padding-top: 80px;
+    position: relative;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+/* --- First Column (Info) --- */
+.col-info h2 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.col-info p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Social Icons Red Hover */
+.social-icons a:hover {
+    background-color: #f61e4e;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* --- Service & Support Columns (Lists) --- */
+.footer-col h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+/* Services & Support Links Red Hover Effect */
+.footer-col ul li a:hover {
+    color: #f61e4e; /* White se Red hover ho jayega */
+}
+
+/* --- Newsletter Column --- */
+.col-newsletter p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 25px;
+}
+
+.newsletter-form {
+    display: flex;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    height: 50px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    border: none;
+    padding: 0 20px;
+    font-size: 14px;
+    outline: none;
+    color: #666;
+}
+
+.newsletter-form button {
+    background-color: #f61e4e;
+    border: none;
+    color: #fff;
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #d1123f;
+}
+
+/* --- Bottom Footer Styles --- */
+.footer-bottom {
+    background-color: #000;
+    border-top: 1px solid #222;
+    padding: 25px 0;
+    position: relative;
+}
+
+.footer-bottom .footer-container {
+    padding-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+/* --- Back to Top Button --- */
+.back-to-top {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #f61e4e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #d1123f;
+    transform: translateY(-50%) scale(1.1); /* Hover par thoda bada hoga */
+}
