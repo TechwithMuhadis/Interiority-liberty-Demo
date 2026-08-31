@@ -16,42 +16,68 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar bg-white">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top">
+        <div class="container d-flex align-items-center justify-content-between">
 
-            <a class="navbar-brand" href="#">
-                <h1><b style="color: #ec1944;">Interiority.</b></h1>
+            <a class="navbar-brand m-0" href="#">
+                <h1 class="m-0 fw-bold" style="color: #ec1944; font-size: 1.8rem;">Interiority.</h1>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+            <div class="d-flex align-items-center gap-2 d-lg-none ms-auto me-2">
+                <button class="header-icon-btn" aria-label="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <a href="tel:+923261169871" class="header-icon-btn call-btn-mobile" aria-label="Call">
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+                <button class="header-icon-btn" aria-label="Toggle Theme">
+                    <i class="fa-regular fa-moon"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0 shadow-none p-1" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 pt-3 pt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="./about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Blog
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Blog Without sidebar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Blog With left sidebar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Blog With right sidebar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Blog With single left sidebar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Blog With single right sidebar</a></li>
-                            <hr class="dropdown-divider">
-                            <li><a class="dropdown-item" href="#">Blog With single post</a></li>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item py-2" href="#">Blog Without sidebar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Blog With left sidebar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Blog With right sidebar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Blog With single left sidebar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Blog With single right sidebar</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item py-2" href="#">Blog With single post</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -59,40 +85,45 @@
                             aria-expanded="false">
                             Pages
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Services</a></li>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item py-2" href="#">Services</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">404</a></li>
+                            <li><a class="dropdown-item py-2" href="#">404</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Email</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Email</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Eements</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Elements</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                            <li><a class="dropdown-item py-2" href="#">Landing Page</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <div class="btn-icon">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                <div class="btn-icon">
-                    <button><b>+(92)3261169871</b></button>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-moon"></i>
+
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <button class="btn btn-link text-dark p-0 text-decoration-none">
+                        <i class="fa-solid fa-magnifying-glass fs-5"></i>
+                    </button>
+                    <a href="tel:+923261169871" class="btn-danger-custom">
+                        +(92)3261169871
+                    </a>
+                    <button class="btn btn-link text-dark p-0 text-decoration-none">
+                        <i class="fa-regular fa-moon fs-5"></i>
+                    </button>
                 </div>
             </div>
+
+        </div>
     </nav>
     <div id="carouselExampleCaptions" data-bs-ride="carousel" class="carousel slide">
 
@@ -265,7 +296,7 @@
 
 
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center g-4">
 
                 <div class="card border-0" style="width: 18rem;">
                     <div class="card-body">
@@ -280,8 +311,7 @@
                     </div>
 
                 </div>
-
-                <div class="card border-0" style="width: 18rem;">
+                <div class="card border-0" style="width: 18rem; ">
 
                     <div class="card-body">
                         <div class="card-icon">
@@ -393,7 +423,7 @@
             <!-- Card 1 -->
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="card">
-                    <img src="./ab1.jpg" class="card-img-top" alt="...">
+                    <img src="./ab1.jpg" class="card-img-top" alt="Interior design project">
                     <div class="card-body">
                         <a href="#" class="card-link" style="font-size: 25px;"><b>Perfect Planning</b></a>
                     </div>
@@ -403,7 +433,7 @@
             <!-- Card 2 -->
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="card">
-                    <img src="./ab21.jpg" class="card-img-top" alt="...">
+                    <img src="./ab21.jpg" class="card-img-top" alt="Interior design project">
                     <div class="card-body">
                         <a href="#" class="card-link" style="font-size: 25px;"><b>Perfect Designing</b></a>
                     </div>
@@ -413,7 +443,7 @@
             <!-- Card 3 -->
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="card">
-                    <img src="./ab3.jpg" class="card-img-top" alt="...">
+                    <img src="./ab3.jpg" class="card-img-top" alt="Interior design project">
                     <div class="card-body">
                         <a href="#" class="card-link" style="font-size: 25px;"><b>Best Interior</b></a>
                     </div>
@@ -423,7 +453,7 @@
             <!-- Card 4 -->
             <div class="col-lg-3 col-md-6 col-12">
                 <div class="card">
-                    <img src="./ab4.jpg" class="card-img-top" alt="...">
+                    <img src="./ab4.jpg" class="card-img-top" alt="Interior design project">
                     <div class="card-body">
                         <a href="#" class="card-link" style="font-size: 25px;"><b>Furniture Design</b></a>
                     </div>
@@ -723,8 +753,9 @@
                     <div class="card-body p-4">
                         <span class="badge-category">Interior Design</span>
                         <div class="meta-info d-flex align-items-center gap-3">
-                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by Admin</a>
-                                <span><i class="fa-regular fa-calendar-days"></i> 16.01.2022</span>
+                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by
+                                    Admin</a></span>
+                            <span><i class="fa-regular fa-calendar-days"></i> 16.01.2022</span>
                         </div>
                         <a href="#" class="card-title-link">How Architects Design for Less Lonely Living.</a>
 
@@ -741,8 +772,9 @@
                     <div class="card-body p-4">
                         <span class="badge-category">Interior Design</span>
                         <div class="meta-info d-flex align-items-center gap-3">
-                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by Admin</a>
-                                <span><i class="fa-regular fa-calendar-days"></i> 18.01.2022</span>
+                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by
+                                    Admin</a></span>
+                            <span><i class="fa-regular fa-calendar-days"></i> 18.01.2022</span>
                         </div>
                         <a href="#" class="card-title-link">How Architects Design for Less Lonely Living.</a>
 
@@ -759,8 +791,9 @@
                     <div class="card-body p-4">
                         <span class="badge-category">Interior Design</span>
                         <div class="meta-info d-flex align-items-center gap-3">
-                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by Admin</a>
-                                <span><i class="fa-regular fa-calendar-days"></i> 18.01.2022</span>
+                            <span><i class="fa-solid fa-user"></i> <a href="#" class="card-title-link">by
+                                    Admin</a></span>
+                            <span><i class="fa-regular fa-calendar-days"></i> 18.01.2022</span>
                         </div>
                         <a href="#" class="card-title-link">How Architects Design for Less Lonely Living.</a>
                     </div>
@@ -769,13 +802,14 @@
 
         </div>
     </div>
-   <!-- Footer Shuru -->
+
     <footer class="main-footer">
         <div class="footer-container">
-            <!-- Pehla Column -->
+
             <div class="footer-col col-info">
                 <h2>INTERIORITY.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur elit. Earum mollitia ipsam autem ipsam.dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur elit. Earum mollitia ipsam autem ipsam.dolore magna aliquam
+                    erat volutpat. Ut wisi enim ad minim veniam.</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -784,7 +818,7 @@
                 </div>
             </div>
 
-            <!-- Dusra Column -->
+
             <div class="footer-col">
                 <h3>Services</h3>
                 <ul>
@@ -796,7 +830,7 @@
                 </ul>
             </div>
 
-            <!-- Tisra Column -->
+
             <div class="footer-col">
                 <h3>Support</h3>
                 <ul>
@@ -807,7 +841,7 @@
                 </ul>
             </div>
 
-            <!-- Choutha Column (Newsletter) -->
+
             <div class="footer-col col-newsletter">
                 <h3>Newsletter</h3>
                 <form class="newsletter-form">
@@ -818,7 +852,7 @@
             </div>
         </div>
 
-        <!-- Neechay wali line (Bottom Footer) -->
+
         <div class="footer-bottom">
             <div class="footer-container">
                 <p>&copy; 2022 Interiority. All rights reserved. Design by W3Layouts</p>
@@ -827,10 +861,10 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
